@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Jasmin ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e8,#fff5fa);
+overflow-x:hidden;
+color:#444;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:50px;
+border-radius:25px;
+max-width:750px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+animation:fade 1.2s;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#ff4f81;
+margin-bottom:15px;
+}
+
+h2{
+color:#ff4f81;
+margin-bottom:20px;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+button{
+padding:15px 40px;
+border:none;
+border-radius:40px;
+background:#ff4f81;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ff2d68;
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+.heart{
+position:fixed;
+color:#ff4f81;
+font-size:22px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="card">
+
+<h1>Jasmin ❤️</h1>
+
+<h2>To My Amazing Best Friend</h2>
+
+<p>
+
+Dear Jasmin,
+
+Life becomes brighter with people who genuinely care, and I'm grateful to have you as my best friend. Thank you for always making me laugh, standing by me during difficult times, and turning ordinary moments into unforgettable memories.
+
+Your kindness, beautiful heart, and positive energy make everyone around you feel special. No matter where life takes us, I hope our friendship always stays strong because friends like you are truly one in a million.
+
+Thank you for being exactly who you are. Keep smiling, keep shining, and never stop believing in yourself. You deserve every happiness this world has to offer.
+
+❤️ Forever grateful to have a best friend like you. ❤️
+
+</p>
+
+<button onclick="showMessage()">Click Here 💖</button>
+
+</div>
+
+</div>
+
+<footer>
+
+Made with ❤️ Especially for Jasmin
+
+</footer>
+
+<script>
+
+function showMessage(){
+
+alert("Jasmin, thank you for being the most wonderful best friend. May our friendship last forever! ❤️");
+
+}
+
+for(let i=0;i<30;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+heart.style.fontSize=(18+Math.random()*25)+"px";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
